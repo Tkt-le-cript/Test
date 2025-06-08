@@ -3,65 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>JTUB</title>
+  <title>JTOK (TikTok clone)</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="status-bar">
-      <span>15:44</span>
-      <span class="icon mute"></span>
-      <span class="icon wifi"></span>
-      <span class="icon battery">15%</span>
-    </div>
-  </header>
-
-  <main>
-    <div class="filters">
-      <button class="filter active">Tout</button>
-      <button class="filter">Musique</button>
-      <button class="filter">Podcasts</button>
-      <button class="filter">Livres audio</button>
-    </div>
-
-    <section class="playlists">
-      <div class="playlist">Cool et c tout</div>
-      <div class="playlist">phonk</div>
-      <div class="playlist">Tk78 musique 😅</div>
-    </section>
-
-    <section class="recommended">
-      <h2>Sélectionné pour vous</h2>
-      <div class="card large">
-        <img src="https://via.placeholder.com/300x150.png?text=Minecraft" alt="Recommandé">
-        <p>Tout ce que Tu Construis, Je Le Paye</p>
-      </div>
-    </section>
-
-    <section class="latest">
-      <h2>Dernières sorties rien que pour vous</h2>
-      <div class="card-row">
-        <div class="card">
-          <img src="https://via.placeholder.com/100.png?text=Ziak" alt="Ziak">
-          <p>Badland - Ziak</p>
+  <div class="video-feed">
+    <div class="video-container">
+      <video src="video1.mp4" autoplay loop muted></video>
+      <div class="overlay">
+        <div class="video-info">
+          <p class="username">@utilisateur</p>
+          <p class="description">Voici une super vidéo #fun #jtok</p>
+          <p class="music">🎵 Musique - Artiste</p>
         </div>
-        <div class="card">
-          <img src="https://via.placeholder.com/100.png?text=Zgeg" alt="Zgeg">
-          <p>Zgeg - Pompe Man, Monuk</p>
+        <div class="actions">
+          <button>❤️<br><span>123</span></button>
+          <button>💬<br><span>45</span></button>
+          <button>🔗<br><span>Partage</span></button>
         </div>
       </div>
-    </section>
-  </main>
-
-  <footer>
-    <nav class="bottom-nav">
-      <button>Accueil</button>
-      <button>Rechercher</button>
-      <button>Bibliothèque</button>
-      <button>Créer</button>
-    </nav>
-  </footer>
-
+    </div>
+    <div class="video-container">
+      <video src="video2.mp4" autoplay loop muted></video>
+      <div class="overlay">
+        <div class="video-info">
+          <p class="username">@autreuser</p>
+          <p class="description">Encore une autre vidéo cool</p>
+          <p class="music">🎵 Son original</p>
+        </div>
+        <div class="actions">
+          <button>❤️<br><span>456</span></button>
+          <button>💬<br><span>78</span></button>
+          <button>🔗<br><span>Partager</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
   <script src="script.js"></script>
 </body>
 </html>
